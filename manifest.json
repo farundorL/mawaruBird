@@ -1,0 +1,13 @@
+{
+  "name": "mawaruBird",
+  "manifest_version": 2,
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://twitter.com/*", "https://twitter.com/*"],
+      "css": ["rotate.css"],
+      "js": ["inputRotate.js"]
+    }
+  ]
+}
