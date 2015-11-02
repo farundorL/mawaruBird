@@ -1,7 +1,7 @@
 var mawaru = new function() {
 
   var speed = 0;
-  var bird = document.getElementsByClassName("Icon--bird").item()
+  var bird = document.getElementsByClassName("Icon--bird")[0];
 
   document.addEventListener('keydown', function(event) {
       if(event.keyCode == 37) { speed -= 1; }
@@ -23,16 +23,16 @@ var mawaru = new function() {
     nop();
 
     setTimeout( function() {
-      bird.style.webkitAnimationDuration = Math.abs(rotate) + "s";
-      bird.style.webkitAnimationDirection = "normal";
-      bird.style.webkitAnimationTimingFunction = "linear";
-      bird.style.webkitAnimationIterationCount = "infinite";
-      bird.style.webkitAnimationName = "rotate" + ((rotate < 0) ? "L" : "R");
+      bird.style.animationDuration = Math.abs(rotate) + "s";
+      bird.style.animationDirection = "normal";
+      bird.style.animationTimingFunction = "linear";
+      bird.style.animationIterationCount = "infinite";
+      bird.style.animationName = "rotate" + ((rotate < 0) ? "L" : "R");
     }, 10);
   }
 
   function nop() {
-    bird.style.webkitAnimationName = "";
+    bird.style.animationName = "";
   }
 
 console.log("←or→ to rotate the blue bird");
