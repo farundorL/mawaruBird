@@ -1,9 +1,9 @@
 var star = new function() {
 
-  var element = '<li class="topics" data-global-action="favorite">\
-    <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/favorites" data-component-term="favorite_nav" data-nav="favorite">\
-      <span class="Icon Icon--favorite Icon--large"></span>\
-      <span class="text">Favorite</span>\
+  var element = '<li class="likes-nav" data-global-action="likes">\
+    <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/i/likes" data-component-term="likes_nav" data-nav="likes">\
+      <span class="Icon Icon--favorite Icon--large" style="font-size: 22pt; line-height: 0.7em;">♥</span>\
+      <span class="text" style="margin-left: 0px;">Likes</span>\
     </a>\
   </li>';
   // $('#global-actions').children().eq(2).after(element);
